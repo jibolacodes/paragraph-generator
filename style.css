@@ -39,7 +39,7 @@ body {
     flex-direction: column;
     padding-top: 3rem; 
 }
-.input {
+.app {
    padding: 0 20px 20px 20px;
 }
 .title {
@@ -50,10 +50,21 @@ body {
 .generate {
     background-color: var(--clr-4);
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    width: fit-content;
     margin-top: 30px;
     padding: 15px;
     border-radius: var(--br);
+}
+@media screen and (max-width : 425px) {
+    .generate {
+        width: auto;
+        justify-content: space-evenly;
+    }
+    .output {
+        /* margin:  auto; */
+        width: 100vw;
+    }
 }
 .para-title {
     text-transform: capitalize;
@@ -86,13 +97,9 @@ body {
     background-color: var(--clr-5);
     transform: translateY(4px);
 }
-.output {
-   width: 80vw;
-   margin-top: 20px;
-}
 .paragraph {
     padding: 20px;
-    margin-bottom: 10px;
+    margin-top: 10px;
     background-color: var(--clr-2);
     font-family: var(--ff-2);
     font-size: calc(10px + (15 -10) * ((100vw -320px)/(2560 -320)));
