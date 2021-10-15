@@ -55,16 +55,6 @@ body {
     padding: 15px;
     border-radius: var(--br);
 }
-@media screen and (max-width : 425px) {
-    .generate {
-        width: auto;
-        justify-content: space-evenly;
-    }
-    .output {
-        /* margin:  auto; */
-        width: 100vw;
-    }
-}
 .para-title {
     text-transform: capitalize;
     font-family: var(--ff-2);
@@ -98,6 +88,7 @@ body {
 }
 .paragraph {
     padding: 20px;
+    margin-right: 20px;
     margin-top: 10px;
     background-color: var(--clr-2);
     font-family: var(--ff-2);
@@ -112,4 +103,14 @@ footer {
 }
 #love {
     color: crimson;
+}
+/* media queries */
+@media screen and (max-width : 425px) {
+    .generate {
+        width: auto;
+        justify-content: space-evenly;
+    }
+    .paragraph {
+        margin: 20px auto;
+    }
 }
