@@ -50,7 +50,6 @@ body {
 .generate {
     background-color: var(--clr-4);
     display: flex;
-    /* justify-content: space-around; */
     width: fit-content;
     margin-top: 30px;
     padding: 15px;
