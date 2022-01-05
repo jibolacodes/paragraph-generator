@@ -1,2 +1,2 @@
 # paragraph-generator
-Generates Paragraphs of words s specified by user.
+Generates Paragraphs of words specified by user.
